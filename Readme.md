@@ -1,12 +1,17 @@
-1. Purpose of this project
+# DATA 607 Tidyverse Assignment
+
 --------------------------
+
+
+## 1. Purpose of this project
+
 
 To create a programming sample vignette that demonstrates how to use one
 or more of the capabilities of selected TidyVerse packages using a
 dataset selected either from Kaggle or Fivethirtyeight.
-
-2. About Tidyverse
 ------------------
+## 2. About Tidyverse
+
 
 ![](https://github.com/DevMeh/tidyverse/blob/master/tidy.jpeg)
 Tidyverse is a collection of packages designed for datascience
@@ -21,9 +26,9 @@ applications. Currently it consists of the following packages:
 -   stringr - for working with strings
 -   forcats - tools to solve commong problemsn with factors. For more
     information please visit [Tidyverse](https://www.tidyverse.org/)
-
-3. Dataset
 ----------
+## 3. Dataset
+
 
 The objective of this exercise is to compare the defense spending of the
 US, the European Union and India over the years. A such, the dataset
@@ -34,8 +39,10 @@ This data was first published by the World Bank and a more expanded
 dataset with relevant infromation can be found at the [World Bank
 Website](https://data.worldbank.org/indicator/MS.MIL.XPND.CD)
 
-4. Readr (read\_csv)
+
 --------------------
+## 4. Readr (read\_csv)
+
 
 Since this data can be considered rectangular and is in a csv format, we
 are going to demonstrate the capabilities of the `read_csv` function
@@ -66,8 +73,10 @@ where:
 
 -   skip\_empty\_rows - Should blank rows be ignored
 
-5. Tidyr (pivot\_longer)
 ------------------------
+
+## 5. Tidyr (pivot\_longer)
+
 
 According to the tidyverse webset, the goal of of tidyr is to create
 ‘tidy data’ where:
@@ -104,8 +113,10 @@ where:
 
 -   values\_drop\_na - If TRUE, will drop rows that contain only NAs.
 
-6. dplyr (mutate, filter)
+
 -------------------------
+## 6. dplyr (mutate, filter)
+
 
 The dplyr library is considered to be the “grammar of data
 manipulation”. The five ‘verbs’ of manipulating data with dplyr are:
