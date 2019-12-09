@@ -2,7 +2,7 @@
 title: "Tidyverse Assignment - Ramen Ratings"
 author: "Stephen Haslett"
 date: "11/25/2019"
-output: rmd_document
+output: md_document
 ---
 
 ```{r setup, include=FALSE}
@@ -103,12 +103,8 @@ According to the dplyr documentation the group_by() function takes an existing t
 
 ```
 
-ggplot2 (geom_line)
-Finally we are going to plot the three expenditures on the same graph using the ggplot2 package. The steps to create a line chart using ggplot is as follows:
 
-Step 1:
-
-### Addition 1: We will use ggplot() to visualize the datadrame from addition 1 above. This will happen in three steps
+### Addition 2: We will use ggplot() to visualize the datadrame from addition 1 above. This will happen in three steps
 
 1. ggplot() initialize a ggplot object which declares input data frame for a graphic and sets aesthetics intended to be common throughout all subsequent layers. Syntax for creating a ggplot object is
 ggplot(data = NULL, mapping = aes(), ...)
@@ -119,23 +115,14 @@ mapping - list of aesthetic mappings to use for plotting
 
 Note that fill=Country just tells ggplot to color each country seperately
 
-
-
 2. geom_bar() creates a bar plot where the argument stat='identity' ensures that the length of the bars are determined by the counts of y axis 
 
-
-
 3. Other arguments to determine the overall look of the visualiation
-
-
 
 
 ```{r, ratings}
 ggplot(ramen_counts, aes(x=Country, y=count, fill=Country ))+geom_bar(stat = "identity" ) + theme(axis.text.x = element_text(size=12, angle = 90, hjust = 1))
 
-
 ```
 
-
-mutate(ramen_ratings,ratings=as.numeric(Stars))
 

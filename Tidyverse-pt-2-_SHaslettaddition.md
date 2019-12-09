@@ -155,12 +155,6 @@ establishments
 
     ## Selecting by count
 
-ggplot2 (geom\_line) Finally we are going to plot the three expenditures
-on the same graph using the ggplot2 package. The steps to create a line
-chart using ggplot is as follows:
-
-Step 1:
-
 ### Addition 2: We will use ggplot() to visualize the datadrame from addition 1 above. This will happen in three steps
 
 1.  ggplot() initialize a ggplot object which declares input data frame
@@ -185,3 +179,4 @@ seperately
 
     ggplot(ramen_counts, aes(x=Country, y=count, fill=Country ))+geom_bar(stat = "identity" ) + theme(axis.text.x = element_text(size=12, angle = 90, hjust = 1))
 
+![](Tidyverse-pt-2-_SHaslettaddition_files/figure-markdown_strict/ratings-1.png)
