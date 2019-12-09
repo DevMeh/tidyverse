@@ -169,3 +169,5 @@ mapping - list of aesthetic mappings to use for plotting
 geom_line() connects all the observations within the data frame. Note in order to plot lines we have to specify the number of groups within a dataframe , or the column whose discrete values will determine the number of groups. In the example below the column which contrains country codes (‘Code’) will determine grouping since each line is for a single value of ‘Code’
 
 #### Step 3
+
+Other arguments to determine the overall look of the visualiation
