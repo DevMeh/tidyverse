@@ -149,3 +149,23 @@ where:
 
 -   preserve- when FALSE, the grouping structure is recalculated based
     on the resulting data, otherwise it is kept as is.
+
+
+
+## 7. ggplot2 (geom_line)
+Finally we are going to plot the three expenditures on the same graph using the ggplot2 package. The steps to create a line chart using ggplot is as follows:
+
+#### Step 1:
+
+ggplot() initialize a ggplot object which declares input data frame for a graphic and sets aesthetics intended to be common throughout all subsequent layers. Syntax for creating a ggplot object is
+ggplot(data = NULL, mapping = aes(), ...)
+
+Where: - data- dataset to used for plotting.
+
+mapping - list of aesthetic mappings to use for plotting
+
+#### Step 2
+
+geom_line() connects all the observations within the data frame. Note in order to plot lines we have to specify the number of groups within a dataframe , or the column whose discrete values will determine the number of groups. In the example below the column which contrains country codes (‘Code’) will determine grouping since each line is for a single value of ‘Code’
+
+#### Step 3
